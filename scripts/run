@@ -1,0 +1,13 @@
+#!/bin/sh
+echo "Running run Script"
+
+#Get path of directory containing scripts
+
+full_path=$(realpath $0)
+dir_path=$(dirname $full_path)
+echo $dir_path
+
+$dir_path/setup
+$dir_path/madness
+$dir_path/validate
+#$dir_path/makePDF
