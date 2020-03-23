@@ -1,0 +1,14 @@
+version: '1'
+steps:
+
+#Run March Madness Application
+- uses: "./docker"
+  runs: ["./scripts/madness"]
+
+#Running Validation: 64 Teams Present
+- uses: "./docker"
+  runs: ["./scripts/validate"]
+
+#Creat PDF
+#- uses: "./docker"  
+#   runs: ["./scripts/makePDF"]
