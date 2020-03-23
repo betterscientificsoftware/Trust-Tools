@@ -1,0 +1,4 @@
+1,Beast Squares
+2,Likelihood Loggers
+3,Linear Aggressors
+4,Gaussian Eliminators

@@ -1,0 +1,353 @@
+   1, Abilene Chr
+   2, Air Force
+   3, Akron
+   4, Alabama
+   5, Alabama A&M
+   6, Alabama St
+   7, Alcorn St
+   8, American Univ
+   9, Appalachian St
+  10, Arizona
+  11, Arizona St
+  12, Ark Little Rock
+  13, Ark Pine Bluff
+  14, Arkansas
+  15, ArkansasSt
+  16, Army
+  17, Auburn
+  18, Austin Peay
+  19, Ball St
+  20, Baylor
+  21, Belmont
+  22, Bethune-Cookman
+  23, Binghamton
+  24, Boise St
+  25, Boston College
+  26, Boston Univ
+  27, Bowling Green
+  28, Bradley
+  29, Brown
+  30, Bryant
+  31, Bucknell
+  32, Buffalo
+  33, Butler
+  34, BYU
+  35, C Michigan
+  36, Cal Baptist
+  37, Cal Poly
+  38, California
+  39, Campbell
+  40, Canisius
+  41, Cent Arkansas
+  42, Central Conn
+  43, Charleston So
+  44, Charlotte
+  45, Chattanooga
+  46, Chicago St
+  47, Cincinnati
+  48, Citadel
+  49, Clemson
+  50, Cleveland St
+  51, Coastal Car
+  52, Col Charleston
+  53, Colgate
+  54, Colorado
+  55, Colorado St
+  56, Columbia
+  57, Connecticut
+  58, Coppin St
+  59, Cornell
+  60, Creighton
+  61, CS Bakersfield
+  62, CS Fullerton
+  63, CS Northridge
+  64, CS Sacramento
+  65, Dartmouth
+  66, Davidson
+  67, Dayton
+  68, Delaware
+  69, Delaware St
+  70, Denver
+  71, DePaul
+  72, Detroit
+  73, Drake
+  74, Drexel
+  75, Duke
+  76, Duquesne
+  77, E Illinois
+  78, E Kentucky
+  79, E Michigan
+  80, E Washington
+  81, East Carolina
+  82, Elon
+  83, ETSU
+  84, Evansville
+  85, F Dickinson
+  86, Fairfield
+  87, FL Atlantic
+  88, FL Gulf Coast
+  89, Florida
+  90, Florida A&M
+  91, Florida Intl
+  92, Florida St
+  93, Fordham
+  94, Fresno St
+  95, Furman
+  96, G Washington
+  97, Ga Southern
+  98, Gardner Webb
+  99, George Mason
+ 100, Georgetown
+ 101, Georgia
+ 102, Georgia St
+ 103, Georgia Tech
+ 104, Gonzaga
+ 105, Grambling
+ 106, Grand Canyon
+ 107, Hampton
+ 108, Hartford
+ 109, Harvard
+ 110, Hawaii
+ 111, High Point
+ 112, Hofstra
+ 113, Holy Cross
+ 114, Houston
+ 115, Houston Bap
+ 116, Howard
+ 117, Idaho
+ 118, Idaho St
+ 119, IL Chicago
+ 120, Illinois
+ 121, Illinois St
+ 122, Incarnate Word
+ 123, Indiana
+ 124, Indiana St
+ 125, Iona
+ 126, Iowa
+ 127, Iowa St
+ 128, IUPUI
+ 129, Jackson St
+ 130, Jacksonville
+ 131, Jacksonville St
+ 132, James Madison
+ 133, Kansas
+ 134, Kansas St
+ 135, Kennesaw
+ 136, Kent
+ 137, Kentucky
+ 138, La Salle
+ 139, Lafayette
+ 140, Lamar
+ 141, Lehigh
+ 142, Liberty
+ 143, Lipscomb
+ 144, LIU Brooklyn
+ 145, Long Beach St
+ 146, Longwood
+ 147, Louisiana
+ 148, Louisiana Tech
+ 149, Louisville
+ 150, Loy Marymount
+ 151, Loyola MD
+ 152, Loyola-Chicago
+ 153, LSU
+ 154, MA_Lowell
+ 155, Maine
+ 156, Manhattan
+ 157, Marist
+ 158, Marquette
+ 159, Marshall
+ 160, Maryland
+ 161, Massachusetts
+ 162, McNeese St
+ 163, MD E Shore
+ 164, Memphis
+ 165, Mercer
+ 166, Miami FL
+ 167, Miami OH
+ 168, Michigan
+ 169, Michigan St
+ 170, Minnesota
+ 171, Mississippi
+ 172, Mississippi St
+ 173, Missouri
+ 174, Missouri KC
+ 175, Missouri St
+ 176, Monmouth NJ
+ 177, Montana
+ 178, Montana St
+ 179, Morehead St
+ 180, Morgan St
+ 181, MS Valley St
+ 182, Mt St Mary's
+ 183, MTSU
+ 184, Murray St
+ 185, N Colorado
+ 186, N Dakota St
+ 187, N Illinois
+ 188, N Kentucky
+ 189, Navy
+ 190, NC A&T
+ 191, NC Central
+ 192, NC State
+ 193, NE Omaha
+ 194, Nebraska
+ 195, Nevada
+ 196, New Hampshire
+ 197, New Mexico
+ 198, New Mexico St
+ 199, New Orleans
+ 200, Niagara
+ 201, Nicholls St
+ 202, NJIT
+ 203, Norfolk St
+ 204, North Alabama
+ 205, North Carolina
+ 206, North Dakota
+ 207, North Florida
+ 208, North Texas
+ 209, Northeastern
+ 210, Northern Arizona
+ 211, Northern Iowa
+ 212, Northwestern
+ 213, Northwestern LA
+ 214, Notre Dame
+ 215, Oakland
+ 216, Ohio
+ 217, Ohio St
+ 218, Oklahoma
+ 219, Oklahoma St
+ 220, Old Dominion
+ 221, Oral Roberts
+ 222, Oregon
+ 223, Oregon St
+ 224, Pacific
+ 225, Penn
+ 226, Penn St
+ 227, Pepperdine
+ 228, PFW
+ 229, Pittsburgh
+ 230, Portland
+ 231, Portland St
+ 232, Prairie View
+ 233, Presbyterian
+ 234, Princeton
+ 235, Providence
+ 236, Purdue
+ 237, Quinnipiac
+ 238, Radford
+ 239, Rhode Island
+ 240, Rice
+ 241, Richmond
+ 242, Rider
+ 243, Robert Morris
+ 244, Rutgers
+ 245, S Carolina St
+ 246, S Dakota St
+ 247, S Illinois
+ 248, Sacred Heart
+ 249, Sam Houston St
+ 250, Samford
+ 251, San Diego
+ 252, San Diego St
+ 253, San Francisco
+ 254, San Jose St
+ 255, Santa Clara
+ 256, Savannah St
+ 257, SC Upstate
+ 258, SE Louisiana
+ 259, SE Missouri St
+ 260, Seattle
+ 261, Seton Hall
+ 262, SF Austin
+ 263, Siena
+ 264, SIUE
+ 265, SMU
+ 266, South Alabama
+ 267, South Carolina
+ 268, South Dakota
+ 269, South Florida
+ 270, Southern Miss
+ 271, Southern Univ
+ 272, Southern Utah
+ 273, St Bonaventure
+ 274, St Francis NY
+ 275, St Francis PA
+ 276, St John's
+ 277, St Joseph's PA
+ 278, St Louis
+ 279, St Mary's CA
+ 280, St Peter's
+ 281, Stanford
+ 282, Stetson
+ 283, Stony Brook
+ 284, SUNY Albany
+ 285, Syracuse
+ 286, TAM C. Christi
+ 287, TCU
+ 288, Temple
+ 289, Tennessee
+ 290, Tennessee St
+ 291, Tennessee Tech
+ 292, Texas
+ 293, Texas A&M
+ 294, Texas St
+ 295, Texas Tech
+ 296, TN Martin
+ 297, Toledo
+ 298, Towson
+ 299, Troy
+ 300, Tulane
+ 301, Tulsa
+ 302, TX Southern
+ 303, UAB
+ 304, UC Davis
+ 305, UC Irvine
+ 306, UC Riverside
+ 307, UC Santa Barbara
+ 308, UCF
+ 309, UCLA
+ 310, ULM
+ 311, UMBC
+ 312, UNC Asheville
+ 313, UNC Greensboro
+ 314, UNC Wilmington
+ 315, UNLV
+ 316, USC
+ 317, UT Arlington
+ 318, UT San Antonio
+ 319, Utah
+ 320, Utah St
+ 321, Utah Valley
+ 322, UTEP
+ 323, UTRGV
+ 324, Valparaiso
+ 325, Vanderbilt
+ 326, VCU
+ 327, Vermont
+ 328, Villanova
+ 329, Virginia
+ 330, Virginia Tech
+ 331, VMI
+ 332, W Carolina
+ 333, W Illinois
+ 334, W Michigan
+ 335, Wagner
+ 336, Wake Forest
+ 337, Washington
+ 338, Washington St
+ 339, Weber St
+ 340, West Virginia
+ 341, WI Green_Bay
+ 342, WI Milwaukee
+ 343, Wichita St
+ 344, William & Mary
+ 345, Winthrop
+ 346, Wisconsin
+ 347, WKU
+ 348, Wofford
+ 349, Wright St
+ 350, Wyoming
+ 351, Xavier
+ 352, Yale
+ 353, Youngstown St
