@@ -1,0 +1,12 @@
+#!/bin/sh
+echo "Running validation Script"
+
+value=$(cat ./madness/output.txt | wc -l)
+
+if [ $value -eq 65 ]
+then
+	echo "Correct Number (64) of Teams Found"
+else
+	echo "Incorrect number of teams"
+
+fi
