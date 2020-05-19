@@ -1,0 +1,64 @@
+329 Virginia
+295 Texas Tech
+17 Auburn
+169 Michigan St
+236 Purdue
+75 Duke
+104 Gonzaga
+137 Kentucky
+222 Oregon
+289 Tennessee
+330 Virginia Tech
+153 LSU
+205 North Carolina
+114 Houston
+92 Florida St
+168 Michigan
+218 Oklahoma
+305 UC Irvine
+328 Villanova
+126 Iowa
+308 UCF
+142 Liberty
+160 Maryland
+170 Minnesota
+337 Washington
+133 Kansas
+217 Ohio St
+348 Wofford
+20 Baylor
+184 Murray St
+32 Buffalo
+89 Florida
+98 Gardner Webb
+171 Mississippi
+346 Wisconsin
+134 Kansas St
+279 St Mary's CA
+220 Old Dominion
+47 Cincinnati
+53 Colgate
+186 N Dakota St
+326 VCU
+172 Mississippi St
+278 St Louis
+21 Belmont
+352 Yale
+149 Louisville
+28 Bradley
+125 Iona
+320 Utah St
+198 New Mexico St
+209 Northeastern
+127 Iowa St
+102 Georgia St
+261 Seton Hall
+1 Abilene Chr
+85 F Dickinson
+285 Syracuse
+158 Marquette
+327 Vermont
+11 Arizona St
+188 N Kentucky
+195 Nevada
+177 Montana
