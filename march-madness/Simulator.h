@@ -1,5 +1,5 @@
 //
-// Created by wilmo on 10/6/2019.
+// Created by wilmot on 10/6/2019.
 //
 
 #ifndef MARCH_MADNESS_SIMULATOR_SIMULATOR_H
@@ -26,7 +26,6 @@ using namespace Eigen;
  */
 vector<Team*> teamCollection;
 vector<Team> resultVector;
-vector<Team*> cleanedResultVector;
 map<int, Team*> teamMap;
 Matrix<double, Dynamic, Dynamic> gameMatrix;
 VectorXd scores;
@@ -40,11 +39,10 @@ int numTeams;
  */
 void createTeams(string teamData);
 
-void loadGames(string gameData);
+void loadGames(string gameData, int flag);
 
-void checkCorrectness(string correctData);
+void run(int flag);
 
-void bin(vector<Team*> *teamVector, vector<vector<int>> *resultVector);
+void populateMatrix(int team_1_Id, int team_2_Id, int team_1_score, int team_2_score);
 
-double comparison(vector<vector<int>> *v1, vector<vector<int>> *v2);
 #endif //MARCH_MADNESS_SIMULATOR_SIMULATOR_H
