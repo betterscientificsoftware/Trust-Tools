@@ -1,0 +1,20 @@
+#(1) Pull parent image.
+From ubuntu:18.04
+
+# (2) Set environment variables.
+ENV DEBIAN_FRONTEND=noninteractive
+
+# (3) Download software dependencies.
+RUN yes| apt-get update && yes| apt-get install g++ && yes | apt-get install git && yes | apt-get install texlive-latex-recommended && yes | apt-get install texlive-publishers && yes | apt-get install python3.6
+    
+# (4) Copy scripts into image
+COPY ./scripts/run.sh /
+COPY ./scripts/madness.sh /
+COPY ./scripts/paper.sh /
+COPY ./scripts/table.py /
+COPY ./scripts/correct.txt /
+COPY ./scripts/SOTF.tex /
+COPY ./scripts/SOTF.bib /
+
+# (5) Run entrypoint script.
+CMD ./run.sh
