@@ -3,18 +3,15 @@ steps:
 
 # (1) Run March Madness Application
 - uses: './container'
-  runs: './scripts/madness.sh'
+  runs: ['./scripts/madness.sh']
 
 # (3) Create LaTeX Table with results
 - uses: docker://python:3
   runs: ['./scripts/table.py','./scripts/correct.txt','./madness/output_no_advantage.txt', './madness/output_2_advantage.txt','./madness/output_4_advantage.txt','./docker_table.tex','12']
 
-- uses: docker://python:3
-  runs: ['./scripts/table.py','./scripts/correct.txt','./madness/output_no_advantage.txt', './madness/output_2_advantage.txt','./madness/output_4_advantage.txt','./popper_table.tex','12']
-
 # (4) Compile Latex files into pdf
 - uses: './container'
-  runs: './paper.sh'
+  runs: ['./paper.sh']
 
 # (5) Remove March Madness Application from host machine
 - uses: './container'

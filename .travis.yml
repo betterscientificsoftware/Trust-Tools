@@ -5,7 +5,11 @@ language: python
 python: 3.7
 services: docker
 install:
-- git clone https://github.com/systemslab/popper /tmp/popper
+- git clone https://github.com/systemslab/popper
 - export PYTHONUNBUFFERED=1
-- pip install /tmp/popper/cli
+- cd popper
+- rm install.sh
+- mv /home/travis/build/betterscientificsoftware/Trust-Tools/install.sh /home/travis/build/betterscientificsoftware/Trust-Tools/popper
+- sh install.sh
+- cd ../popper_solution
 script: popper run -f wf.yml
