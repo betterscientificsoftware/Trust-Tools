@@ -8,7 +8,7 @@ yes| apt-get install cmake
 mkdir madness
 cd ./madness
 git init
-git pull https://github.com/phesse001/March_Madness.git
+git pull https://github.com/phesse001/MarchMadness.git
 mkdir build
 mkdir lib
 mv /googletest /workspace/madness/lib
