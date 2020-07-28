@@ -16,5 +16,13 @@ COPY ./scripts/correct.txt /
 COPY ./scripts/SOTF.tex /
 COPY ./scripts/SOTF.bib /
 
-# (5) Run entrypoint script.
+# (5) Download googletest.
+RUN apt-get -y install cmake protobuf-compiler
+
+RUN git clone -q https://github.com/google/googletest.git /googletest \
+  && mkdir -p /googletest/build \
+  && cd /googletest/build \
+  && cmake .. && make && make install
+
+# (6) Run entrypoint script.
 CMD ./run.sh

@@ -1,17 +1,14 @@
 #!/bin/sh
 # File pulls March Madness simulator form GitHub and executes with three different values for homefeild advantage (0,2,4). Resutls of each run is saved in output files.
 echo "Executing madness.sh"
-#installs and sets up gtest
-apt-get install libgtest-dev
 yes| apt-get install cmake 
-#link of where I left off https://www.eriksmistad.no/getting-started-with-google-test-on-ubuntu/
 mkdir madness
 cd ./madness
 git init
-git pull https://github.com/phesse001/March_Madness.git
+git pull https://github.com/phesse001/MarchMadness.git
 mkdir build
 mkdir lib
-mv /googletest /workspace/madness/lib
+cp -arv /googletest /madness/lib
 cd build
 cmake ..
 make
