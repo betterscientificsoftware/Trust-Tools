@@ -1,3 +1,4 @@
+[![Build Status](https://travis-ci.com/betterscientificsoftware/Trust-Tools.svg?branch=master)](https://travis-ci.com/betterscientificsoftware/Trust-Tools)
 # Trust-Tools
 A collection of resources for creating trusted computational results
 
