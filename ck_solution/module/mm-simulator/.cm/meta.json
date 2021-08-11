@@ -1,0 +1,17 @@
+{
+  "actions": {
+    "generate_paper": {
+      "desc": "generate paper"
+    },
+    "open_notebook": {
+      "desc": "open notebook from experiment run"
+    },
+    "push": {},
+    "run": {
+      "desc": "runs march madness program with three sets of inputs"
+    }
+  },
+  "actions_redirect": {
+    "push-results": "push_results"
+  }
+}

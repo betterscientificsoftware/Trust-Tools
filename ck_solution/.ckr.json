@@ -1,0 +1,22 @@
+{
+  "data_uoa": "march-madness",
+  "data_uid": "9c3bc486ab098560",
+  "data_alias": "march-madness",
+  "data_name": "march-madness",
+  "dict": {
+    "shared": "git",
+    "sync": "yes",
+    "url": "https://github.com/phesse001/MarchMadness_CK",
+    "repo_deps": [
+      {
+        "repo_uoa": "ck-autotuning"
+      },
+      {
+        "repo_uoa": "ck-math"
+      },
+      {
+        "repo_uoa": "ck-analytics"
+      }
+    ]
+  }
+}

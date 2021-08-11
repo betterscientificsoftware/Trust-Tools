@@ -1,0 +1,97 @@
+% This first statement determines the overall format of the document.
+% There are a number of built in types e.g., article.  But many journals
+% and conferences have their own documentclass definition.
+% We will be using IEEETtran.  Note that, in order to use IEEEtran, you
+% will need the IEEEtran.bst and IEEEtran.cls files in the same folder as
+% your main file.
+
+% The % character is the start of a comment.
+% If you want to have Latex print % you need to use \ before the % symbol.
+
+
+\documentclass{IEEEtran}
+%\documentclass{article}
+\usepackage{wrapfig}
+\usepackage{graphicx}
+\usepackage[export]{adjustbox}
+\usepackage{mdframed}
+\usepackage{xcolor}
+\usepackage{listings}
+\usepackage{hyperref}
+\usepackage{xcolor}
+
+
+\title{Collective Knowledge Applied to March Madness Experiment}
+\author{Patrick Hesse}
+\date{8/14/20}
+
+\begin{document}
+\bibliographystyle{plain}
+\maketitle
+\pagestyle{plain}
+\lstdefinestyle{DOS}
+{
+    backgroundcolor=\color{white},
+    basicstyle=\scriptsize\color{black}\ttfamily
+}
+\definecolor{light-gray}{gray}{0.95}
+\newcommand{\code}[1]{\colorbox{light-gray}{\texttt{#1}}}
+
+\begin{abstract}
+    If the essence of scientific discovery could be reduced to a single term it would be reproducibility. Experiments hold merit in the scientific community only when their conclusions can be recreated by peers. The current standard for peer-reviewed submission does not carry the degree of trust that we’ve come to expect from other scientific disciplines. Our work will incorporate transparency into this process through a series of examples. We have created a series of reproducible workflows with a varying level of complexity aimed at guiding members of the computing community through a series of best practices. Standardizing how computational experiments are shared with the broader scientific community will bring the body of computer science computational research closer to the ideal cherished throughout the broader scientific community; namely trust.
+\end{abstract}
+
+\tableofcontents
+
+\listoffigures
+
+\clearpage
+
+\section{Collective Knowledge}
+Several tools have emerged to address reproducibility, most notably Docker~\cite{ITD} and Popper. Docker and other virtual environment software have gained popularity due to their ability to take a snapshot of the environment where a software experiment was conducted. Unfortunately, environment snapshots limit researchers' need to validate and build upon previous experiments~\cite{CKTS}.
+Collective Knowledge (CK) is a framework that provides a standard application program interface (API) that enables researchers to share their projects and artifacts in a common format~\cite{ctuning/ck}. Researchers using CK can share their entire workflow or components, such as source code and data sets, through repositories like GitHub and Bitbucket~\cite{CKTS}. The software service abstracts away access to hardware allowing another researcher to reproduce an experiment under similar conditions~\cite{CKTS}. If a researcher is unable to reproduce an experiment due to an incomplete description of software dependencies, they can debug the workflow and share the fixed repository with the Collective Knowledge community. 
+CK's long term goal is to enable a collaborative, reproducible, and sustainable research environment based on DevOps principles~\cite{ctuning/ck}.
+
+\subsection{Features}
+Entities, repositories, actions, and modules form the basic vocabulary of collective CK~\cite{CKTS}. Entries refer to individual components of a workflow, like source code, data sets, and scripts~\cite{aboutCK}. CK facilitates sharing and organization by assigning unique identifiers (UIDs) to every entry within the project~\cite{aboutCK}. Each entry is stored in a sperate directory with its information stored in a JavaScript Object Notation (JSON) file located in a subdirectory entitled “.cm”~\cite{ctuning/ck}. Modules are a specific type of entry that implements the functionality of CK. Modules act as a collection of entries and the actions that operate on them~\cite{aboutCK}. This creates a two-level directory structure where the top-level directories represent CK modules~\cite{aboutCK}. The second-level directory store program source code, datasets, and experiments. Actions are CK functionalities offered by modules that operate on lower level entries~\cite{aboutCK}. 
+
+\subsection{Code Dependency}
+CK reduces code dependency by automatically detecting and rebuilding the environment of a workflow and installing missing software packages~\cite{ctuning/feat}. All software, data, and models are represented by packages serialized by automatically generated UID, semantic tags, and information about versioning and supported platforms~\cite{ctuning/feat}. By cataloging this information, CK uses the JSON API to automatically detect already installed software and install missing software and other source-specific packages automatically~\cite{ctuningPW}. 
+
+\subsection{Code Rot}
+Members of the Collective knowledge community who download a solution and have trouble running the experiment due to missing environment specification can debug the workflow and post a corrected version to the CK database~\cite{aboutCK}. This feature reduces the likelihood of out-of-date repositories making code rot less likely over time. 
+
+\subsection{Demonstration}
+The first step in creating and running a CK repository is downloading the CK source code. This can be done on Linux, Windows, or MacOS~\cite{DPCK}. For a Linux system \code{pip install ck} will download and install CK.
+After installing CK, \code{ck pull repo} will download a CK repository.
+
+If the repository has a compile action the following command will trigger the compilation of the source code and CK’s automated software dependency detection. At t his point, extra plugins, modules, and packages can be added to the existing project. Once the source code has been compiled \code{ck run [module\_name]: [entity(optional)]} will run the experiment.
+
+\subsection{Collective Knowledge Drawbacks}
+The creators of CodeReef chose to use the open Collective Knowledge format to share components and workflows because of its continued use in academia and industrial projects. However, CodeReef addresses two major limitations of Collective Knowledge when applied to machine learning workflow~\cite{CROP}.
+CK technology is a distributed system without a centralized location for components. This makes keeping track of all community contributions difficult~\cite{CROP}. Additionally, the distributed nature of CK makes adding new components, assembling workflows, and automatic testing across different platforms difficult~\cite{CROP}. 
+CK lacks repository and entity versioning, making it challenging to maintain stable workflows. A bug in one CK component can break dependent workflows in adjacent project~\cite{CROP}.
+Improving on these allows issues allows CodeReef to tackle code dependency and code rot in a similar way to Collective Knowledge while lowering the barrier of entry through a simplification of the software service.a
+
+\subsection{Display results}
+After the compile and run commmands are run, a post-process script is executed building the table of results that follows. The table shows the top 10 teams as predicted by the program compared to the actual top 10 teams of the 2019 season.
+
+
+%March Madness CK
+\input{out_table}
+
+\section{Concluding Remarks}
+The problem of reproducibility in the computer science community can be broken down into two sub-problems. The first is a need for the technical tools necessary for replicating experiments. Without these tools, there is no guarantee that experiments can be trusted in the future. The second is a lack of incentives for creating replicable work.
+
+Researchers face significant barriers to entry in learning new tools. They lack incentives to cultivate an understanding of tools outside of those needed to conduct their experiments. Without being easy to use and adapt to existing workflows, no reproducible solution will be successful~\cite{ITD}. To gain widespread adoption, reproducible solutions must make it easier for researchers to perform tasks~\cite{ITD}. Unfortunately, tools that provide more functionality have increased in complexity. To combat this, resources must exist to educate researchers about the tools available to them. Ultimately, Researchers have options, at times more than they have time to invest in. A central location for cataloging these tools and demonstrating how they can be applied to existing workflows seamlessly is crucial for the adoption of reproducibility in the computational science community.
+
+% This line is used to build the bibliography.  In this case, we use the 
+% \bibliography command to include the file sample.bib, which contains our
+% bibtex database.  The bibtex command (which our LaTeX IDE runs for us) processes
+% our LaTeX document and scans our Bibtex file for matching citations, and then
+% generates the bibligraphy based on the style selection we made at the top
+% of the document.
+\bibliography{SOTF}
+
+\end{document}
+
