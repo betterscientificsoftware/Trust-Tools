@@ -1,0 +1,84 @@
+{
+  "backup_data_uid": "2d54551a5e8bad31",
+  "build_compiler_vars": {
+    "XOPENME": ""
+  },
+  "compile_deps": {
+    "compiler": {
+      "local": "yes",
+      "name": "C++ compiler",
+      "tags": "compiler,lang-cpp"
+    },
+    "package": {
+      "local": "yes",
+      "name": "lib-eigen-src-3.3.4",
+      "no_tags": "",
+      "tags": "eigen"
+    },
+    "xopenme": {
+      "local": "yes",
+      "name": "xOpenME library",
+      "tags": "lib,xopenme"
+    }
+  },
+  "compiler_add_include_as_env_from_deps": [
+    "CK_ENV_LIB_STDCPP_INCLUDE",
+    "CK_ENV_LIB_STDCPP_INCLUDE_EXTRA"
+  ],
+  "compiler_env": "CK_CXX",
+  "compiler_flags_as_env": "$<<CK_COMPILER_FLAG_CPP11>>$",
+  "data_name": "simulator",
+  "linker_add_lib_as_env": [
+    "CK_CXX_EXTRA",
+    "CK_ENV_LIB_STDCPP_STATIC"
+  ],
+  "main_language": "cpp",
+  "print_files_after_run": [
+    "stderr.log",
+    "stdout.log"
+  ],
+  "process_in_tmp": "yes",
+  "program": "yes",
+  "run_cmds": {
+    "default": {
+      "dataset_tags": [
+        "dataset",
+        "march-madness"
+      ],
+      "ignore_return_code": "no",
+      "run_time": {
+        "fine_grain_timer_file": "tmp-ck-timer.json",
+        "run_cmd_main": "$#BIN_FILE#$ $#dataset_path#$",
+        "run_cmd_out1": "stdout.log",
+        "run_cmd_out2": "stderr.log",
+        "run_output_files": [
+          "stdout.log",
+          "stderr.log",
+          "tmp-ck-timer.json"
+        ]
+      }
+    }
+  },
+  "run_vars": {
+    "apply_scaling": 0,
+    "apply_scaling_1": 1,
+    "apply_scaling_2": 1,
+    "apply_scaling_3": 1,
+    "home_field_advantage": 0,
+    "home_field_advantage_1": 3,
+    "home_field_advantage_2": 7,
+    "home_field_advantage_3": 12
+  },
+  "source_files": [
+    "Simulator.cpp",
+    "Game.cpp",
+    "Team.cpp",
+    "main.cpp"
+  ],
+  "tags": [
+    "program",
+    "lang-cpp",
+    "march-madness"
+  ],
+  "target_file": "a"
+}
